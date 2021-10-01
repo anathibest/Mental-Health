@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LiveConsultantComponent } from './live-consultant/live-consultant.component';
 
 
 // Added Components
@@ -10,6 +11,7 @@ const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: '', pathMatch: 'full', redirectTo: '/' },
 	{ path: '', pathMatch: 'full', redirectTo: '/' },
+	{ path: 'chart', component :LiveConsultantComponent },
 	
 
 	// { path: '404', component:},
