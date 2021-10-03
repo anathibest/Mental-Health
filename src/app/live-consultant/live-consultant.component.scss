@@ -30,7 +30,6 @@ nav{
 	position: sticky;
 	top: 0;
 	z-index: 100;
-    background-color: rgb(131, 131, 131);
 }
 .logo{
 	width: 160px;
@@ -88,15 +87,19 @@ nav{
 	top: 0;
 	right: 0;
 }
-
+.container{
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 5%;
+}
 .left-sidebar{
-	// flex-basis: 25%;
+	flex-basis: 25%;
 	position: sticky;
 	top: 60px;
 	align-self: flex-start;
 }
 .right-sidebar{
-	// flex-basis: 25%;
+	flex-basis: 25%;
 	position: sticky;
 	top: 60px;
 	align-self: flex-start;
@@ -106,7 +109,7 @@ nav{
 	color:#626262;
 }
 .main-content{
-	// width: 50vw;
+	width: 47%;
 }
 .imp-links a, .shortcut-links a{
 	text-decoration: none;
