@@ -8,19 +8,20 @@ import { LiveConsultantComponent } from "./live-consultant/live-consultant.compo
 import { QuizzComponent } from "./components/quizz/quizz.component";
 
 const routes: Routes = [
-  { path: "", component: HomeComponent },
   { path: "", pathMatch: "full", redirectTo: "/" },
+  { path: "", component: HomeComponent },
   { path: "", pathMatch: "full", redirectTo: "/" },
   { path: "thoughts", component: ThoughtRecordComponent },
   { path: "chats", component: LiveConsultantComponent },
   { path: "quizz", component: QuizzComponent },
-
-  // { path: '404', component:},
-  { path: "**", redirectTo: "/404" },
-];
+  { path: "thoughs", component: ThoughtRecordComponent },
+  { path: "live",component:LiveConsultantComponent},
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
+
+
